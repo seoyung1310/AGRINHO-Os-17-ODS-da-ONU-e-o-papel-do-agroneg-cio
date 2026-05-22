@@ -1,21 +1,21 @@
 const ods = {
-  1: "ODS 1 - Erradicação da Pobreza: acabar com a pobreza em todas as suas formas.",
-  2: "ODS 2 - Fome Zero: acabar com a fome e promover agricultura sustentável.",
-  3: "ODS 3 - Saúde e Bem-Estar: garantir vida saudável para todos.",
-  4: "ODS 4 - Educação de Qualidade: educação inclusiva e acessível.",
-  5: "ODS 5 - Igualdade de Gênero: alcançar igualdade entre homens e mulheres.",
-  6: "ODS 6 - Água Potável e Saneamento: acesso à água limpa e saneamento.",
-  7: "ODS 7 - Energia Limpa: acesso à energia sustentável e acessível.",
-  8: "ODS 8 - Trabalho Decente: crescimento econômico sustentável.",
-  9: "ODS 9 - Inovação e Infraestrutura: promover industrialização sustentável.",
-  10: "ODS 10 - Redução das Desigualdades: diminuir desigualdades sociais.",
-  11: "ODS 11 - Cidades Sustentáveis: tornar cidades mais inclusivas.",
-  12: "ODS 12 - Consumo Responsável: incentivar produção sustentável.",
-  13: "ODS 13 - Ação Climática: combater mudanças climáticas.",
-  14: "ODS 14 - Vida na Água: proteger oceanos e mares.",
-  15: "ODS 15 - Vida Terrestre: preservar florestas e biodiversidade.",
-  16: "ODS 16 - Paz e Justiça: promover sociedades pacíficas.",
-  17: "ODS 17 - Parcerias: fortalecer meios de implementação global."
+  1: "Erradicação da Pobreza: geração de empregos e oportunidades de renda em áreas rurais.",
+  2: "Fome Zero: aumento da produção agrícola sustentável e garantia da segurança alimentar.",
+  3: "Saúde e Bem-Estar: produção de alimentos saudáveis e nutritivos.",
+  4: "Educação de Qualidade: capacitação de agricultores e trabalhadores rurais.",
+  5: "Igualdade de Gênero: empoderamento feminino no agronegócio.",
+  6: "Água Potável e Saneamento: irrigação sustentável e conservação hídrica.",
+  7: "Energia Limpa: uso de energias renováveis na produção agrícola.",
+  8: "Trabalho Decente e Crescimento Econômico: geração de empregos e fortalecimento da economia local.",
+  9: "Indústria, Inovação e Infraestrutura: adoção de tecnologias agrícolas modernas.",
+  10: "Redução das Desigualdades: inclusão de pequenos agricultores e comunidades rurais.",
+  11: "Cidades e Comunidades Sustentáveis: agricultura urbana e segurança alimentar.",
+  12: "Consumo e Produção Responsáveis: redução de desperdícios e uso sustentável de recursos.",
+  13: "Ação Contra a Mudança do Clima: redução das emissões de gases poluentes.",
+  14: "Vida na Água: preservação de rios, lagos e ecossistemas aquáticos.",
+  15: "Vida Terrestre: proteção da biodiversidade e recuperação ambiental.",
+  16: "Paz, Justiça e Instituições Eficazes: políticas agrícolas justas e transparentes.",
+  17: "Parcerias e Meios de Implementação: cooperação entre governos, empresas e sociedade civil."
 };
 
 function mostrarODS(numero) {
