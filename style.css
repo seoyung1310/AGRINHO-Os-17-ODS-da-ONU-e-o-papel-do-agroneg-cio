@@ -1,60 +1,66 @@
 * {
+.texto-box h2 {
+  color: #00a86b;
+  margin-bottom: 15px;
+}
+
+.destaque {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-botoes button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #00b894;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
 .grid-botoes button:hover {
-  background: #019875;
+  background: #018f6c;
   transform: scale(1.05);
 }
 
 .info-box {
-  margin: 30px auto;
-  max-width: 800px;
+  margin: 35px auto;
+  max-width: 850px;
   background: white;
-  padding: 25px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 18px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   border-left: 8px solid #1e90ff;
-}
-
-.cards-texto {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.texto-box {
-  background: white;
-  padding: 20px;
-  border-radius: 20px;
-  border: 3px dashed #00b894;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.texto-box:hover {
-  transform: translateY(-5px);
-}
-
-.texto-box h3 {
-  margin-bottom: 10px;
-  color: #1e90ff;
 }
 
 .imagens-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .imagem-card {
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .imagem-card img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .imagem-card img:hover {
@@ -65,8 +71,8 @@ footer {
   background: #1e90ff;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 25px;
+  margin-top: 40px;
 }
 
 @media(max-width: 768px) {
@@ -75,6 +81,6 @@ footer {
   }
 
   .banner img {
-    height: 220px;
+    height: 250px;
   }
 }
