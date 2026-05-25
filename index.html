@@ -1,154 +1,72 @@
-# index.html
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ODS e Agronegócio Sustentável</title>
+  <title>ODS e Agronegócio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>🌱 Os 17 ODS da ONU e o Papel do Agronegócio</h1>
-    <p>Desenvolvimento sustentável, inovação e preservação ambiental</p>
+  <header class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>🌱 Os 17 ODS da ONU e o Agronegócio</h1>
+      <p>
+        Sustentabilidade, inovação e desenvolvimento para um futuro melhor.
+      </p>
+    </div>
   </header>
 
-  <section class="banner">
-    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400" alt="Agronegócio sustentável">
-  </section>
+  <main>
 
-  <section class="introducao">
-    <div class="texto-box destaque">
-      <h2>INTRODUÇÃO</h2>
-      <p>
-        O agronegócio se destaca como um setor crucial para a realização dos 17 Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Mais do que um simples consumidor de recursos, a agricultura é um motor essencial para eliminar a fome, promover energia limpa e preservar os ecossistemas terrestres.
-      </p>
-    </div>
-  </section>
+    <section class="introducao container">
+      <div class="intro-img">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200" alt="Agronegócio sustentável">
+      </div>
 
-  <section class="textos">
-    <h2>📚 Informações Importantes</h2>
+      <div class="intro-texto card">
+        <h2>📖 Introdução</h2>
 
-    <div class="cards-texto">
-
-      <div class="texto-box">
-        <h3>O QUE SÃO AS 17 ODS?</h3>
         <p>
-          Os Objetivos de Desenvolvimento Sustentável são metas criadas pela ONU em 2015 para construir um mundo mais justo, sustentável e equilibrado até 2030.
+          O agronegócio possui um papel essencial na realização dos Objetivos de Desenvolvimento Sustentável da ONU.
+          Além de produzir alimentos, o setor contribui para a preservação ambiental, geração de empregos,
+          inovação tecnológica e desenvolvimento econômico sustentável.
         </p>
       </div>
+    </section>
 
-      <div class="texto-box">
-        <h3>PAPEL DO AGRONEGÓCIO</h3>
-        <p>
-          O agronegócio ajuda a combater a fome, preservar recursos naturais e gerar desenvolvimento econômico sustentável.
-        </p>
+    <section class="container">
+      <div class="titulo-section">
+        <h2>📋 Lista das 17 ODS</h2>
       </div>
 
-      <div class="texto-box">
-        <h3>IMPORTÂNCIA DAS ODS</h3>
-        <p>
-          As ODS unem crescimento econômico, justiça social e proteção ambiental para garantir qualidade de vida às futuras gerações.
-        </p>
+      <div class="center">
+        <button class="btn-lista" onclick="mostrarListaODS()">
+          Mostrar / Ocultar ODS
+        </button>
       </div>
 
-      <div class="texto-box">
-        <h3>TECNOLOGIA E INOVAÇÃO</h3>
-        <p>
-          Tecnologias sustentáveis aumentam a produtividade agrícola sem prejudicar o meio ambiente.
-        </p>
+      <div id="listaODS" class="lista-ods"></div>
+    </section>
+
+    <section class="container">
+      <div class="titulo-section">
+        <h2>🌍 O Papel do Agronegócio em Cada ODS</h2>
       </div>
 
-      <div class="texto-box">
-        <h3>DESENVOLVIMENTO GLOBAL</h3>
-        <p>
-          As metas incentivam cooperação internacional e investimentos responsáveis em sustentabilidade.
-        </p>
-      </div>
-
-      <div class="texto-box">
-        <h3>FUTURO SUSTENTÁVEL</h3>
-        <p>
-          Integrar as ODS ao agronegócio é essencial para preservar o planeta e garantir produção eficiente de alimentos.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="lista-ods">
-    <div class="botao-lista">
-      <button onclick="mostrarListaODS()">📋 Mostrar Lista Completa das 17 ODS</button>
-    </div>
-
-    <div id="listaODS" class="lista-box"></div>
-  </section>
-
-  <section class="botoes-ods">
-    <h2>🌍 Como o Agronegócio Contribui para Cada ODS</h2>
-
-    <div class="grid-botoes">
-      <button onclick="mostrarODS(1)">ODS 1</button>
-      <button onclick="mostrarODS(2)">ODS 2</button>
-      <button onclick="mostrarODS(3)">ODS 3</button>
-      <button onclick="mostrarODS(4)">ODS 4</button>
-      <button onclick="mostrarODS(5)">ODS 5</button>
-      <button onclick="mostrarODS(6)">ODS 6</button>
-      <button onclick="mostrarODS(7)">ODS 7</button>
-      <button onclick="mostrarODS(8)">ODS 8</button>
-      <button onclick="mostrarODS(9)">ODS 9</button>
-      <button onclick="mostrarODS(10)">ODS 10</button>
-      <button onclick="mostrarODS(11)">ODS 11</button>
-      <button onclick="mostrarODS(12)">ODS 12</button>
-      <button onclick="mostrarODS(13)">ODS 13</button>
-      <button onclick="mostrarODS(14)">ODS 14</button>
-      <button onclick="mostrarODS(15)">ODS 15</button>
-      <button onclick="mostrarODS(16)">ODS 16</button>
-      <button onclick="mostrarODS(17)">ODS 17</button>
-    </div>
-
-    <div id="infoODS" class="info-box">
-      <h3>ODS e Agronegócio</h3>
-      <p>Clique em um botão para visualizar as informações.</p>
-    </div>
-  </section>
-
-  <section class="galeria">
-    <h2>📸 Imagens do Agronegócio Sustentável</h2>
-
-    <div class="imagens-grid">
-
-      <div class="imagem-card">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=700" alt="Campo agrícola">
-      </div>
-
-      <div class="imagem-card">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=700" alt="Plantação sustentável">
-      </div>
-
-      <div class="imagem-card">
-        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=700" alt="Agricultura moderna">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="conclusao">
-    <div class="texto-box destaque">
-      <h2>CONCLUSÃO</h2>
-      <p>
-        A integração entre os 17 ODS e o agronegócio representa um novo modelo de desenvolvimento sustentável. O setor agrícola se torna fundamental para garantir segurança alimentar, crescimento econômico e preservação ambiental para as futuras gerações.
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <p>🌍 Projeto Educacional sobre os ODS da ONU e o Agronegócio Sustentável</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
+      <div class="grid-botoes">
+        <button onclick="mostrarODS(1)">ODS 1</button>
+        <button onclick="mostrarODS(2)">ODS 2</button>
+        <button onclick="mostrarODS(3)">ODS 3</button>
+        <button onclick="mostrarODS(4)">ODS 4</button>
+        <button onclick="mostrarODS(5)">ODS 5</button>
+        <button onclick="mostrarODS(6)">ODS 6</button>
+        <button onclick="mostrarODS(7)">ODS 7</button>
+        <button onclick="mostrarODS(8)">ODS 8</button>
+        <button onclick="mostrarODS(9)">ODS 9</button>
 </html>
