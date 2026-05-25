@@ -1,3 +1,6 @@
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -79,4 +82,359 @@
   <section class="lista-ods">
     <div class="botao-lista">
       <button onclick="mostrarListaODS()">📋 Mostrar Lista Completa das 17 ODS</button>
+    </div>
+
+    <div id="listaODS" class="lista-box"></div>
+  </section>
+
+  <section class="botoes-ods">
+    <h2>🌍 Como o Agronegócio Contribui para Cada ODS</h2>
+
+    <div class="grid-botoes">
+      <button onclick="mostrarODS(1)">ODS 1</button>
+      <button onclick="mostrarODS(2)">ODS 2</button>
+      <button onclick="mostrarODS(3)">ODS 3</button>
+      <button onclick="mostrarODS(4)">ODS 4</button>
+      <button onclick="mostrarODS(5)">ODS 5</button>
+      <button onclick="mostrarODS(6)">ODS 6</button>
+      <button onclick="mostrarODS(7)">ODS 7</button>
+      <button onclick="mostrarODS(8)">ODS 8</button>
+      <button onclick="mostrarODS(9)">ODS 9</button>
+      <button onclick="mostrarODS(10)">ODS 10</button>
+      <button onclick="mostrarODS(11)">ODS 11</button>
+      <button onclick="mostrarODS(12)">ODS 12</button>
+      <button onclick="mostrarODS(13)">ODS 13</button>
+      <button onclick="mostrarODS(14)">ODS 14</button>
+      <button onclick="mostrarODS(15)">ODS 15</button>
+      <button onclick="mostrarODS(16)">ODS 16</button>
+      <button onclick="mostrarODS(17)">ODS 17</button>
+    </div>
+
+    <div id="infoODS" class="info-box">
+      <h3>ODS e Agronegócio</h3>
+      <p>Clique em um botão para visualizar as informações.</p>
+    </div>
+  </section>
+
+  <section class="galeria">
+    <h2>📸 Imagens do Agronegócio Sustentável</h2>
+
+    <div class="imagens-grid">
+
+      <div class="imagem-card">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=700" alt="Campo agrícola">
+      </div>
+
+      <div class="imagem-card">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=700" alt="Plantação sustentável">
+      </div>
+
+      <div class="imagem-card">
+        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=700" alt="Agricultura moderna">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="conclusao">
+    <div class="texto-box destaque">
+      <h2>CONCLUSÃO</h2>
+      <p>
+        A integração entre os 17 ODS e o agronegócio representa um novo modelo de desenvolvimento sustentável. O setor agrícola se torna fundamental para garantir segurança alimentar, crescimento econômico e preservação ambiental para as futuras gerações.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌍 Projeto Educacional sobre os ODS da ONU e o Agronegócio Sustentável</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
+```
+
+# style.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00c9a7, #92fe9d, #00b4db);
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #1e90ff, #00b894);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.banner img {
+  width: 85%;
+  max-width: 950px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border: 5px solid white;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1e90ff;
+}
+
+.cards-texto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.texto-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  border: 4px double #00b894;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.texto-box:hover {
+  transform: translateY(-8px);
+}
+
+.texto-box h3,
+.texto-box h2 {
+  color: #00a86b;
+  margin-bottom: 15px;
+}
+
+.destaque {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-botoes button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #00b894;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.grid-botoes button:hover {
+  background: #018f6c;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.botao-lista {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.botao-lista button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botao-lista button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+.lista-box {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 40px;
+  display: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.lista-box ul {
+  columns: 2;
+  gap: 40px;
+}
+
+.lista-box li {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.info-box {
+  margin: 35px auto;
+  max-width: 850px;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 8px solid #1e90ff;
+}
+
+.imagens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.imagem-card {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.imagem-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.imagem-card img:hover {
+  transform: scale(1.08);
+}
+
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+@media(max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .banner img {
+    height: 250px;
+  }
+}
+```
+
+---
+
+# main.js
+
+```javascript
+const ods = {
+  1: "ODS 1 - Erradicação da Pobreza: geração de empregos e oportunidades de renda em áreas rurais.",
+
+  2: "ODS 2 - Fome Zero: aumento da produção agrícola sustentável, garantindo segurança alimentar e nutrição adequada.",
+
+  3: "ODS 3 - Saúde e Bem-Estar: práticas agrícolas promovem alimentos saudáveis e nutritivos.",
+
+  4: "ODS 4 - Educação de Qualidade: capacitação de trabalhadores e agricultores sobre práticas sustentáveis.",
+
+  5: "ODS 5 - Igualdade de Gênero: fortalecimento da participação feminina no agronegócio.",
+
+  6: "ODS 6 - Água Potável e Saneamento: uso de irrigação sustentável e conservação dos recursos hídricos.",
+
+  7: "ODS 7 - Energia Limpa: utilização de energias renováveis na produção agrícola.",
+
+  8: "ODS 8 - Trabalho Decente e Crescimento Econômico: geração de empregos dignos e crescimento econômico local.",
+
+  9: "ODS 9 - Indústria, Inovação e Infraestrutura: adoção de tecnologias que aumentam a eficiência agrícola.",
+
+  10: "ODS 10 - Redução das Desigualdades: inclusão de pequenos agricultores e comunidades rurais.",
+
+  11: "ODS 11 - Cidades e Comunidades Sustentáveis: agricultura urbana e promoção da segurança alimentar.",
+
+  12: "ODS 12 - Consumo e Produção Responsáveis: redução de desperdícios e uso sustentável dos recursos.",
+
+  13: "ODS 13 - Ação Contra a Mudança Global do Clima: práticas agrícolas que reduzem emissões de gases poluentes.",
+
+  14: "ODS 14 - Vida na Água: preservação dos recursos hídricos e dos ecossistemas aquáticos.",
+
+  15: "ODS 15 - Vida Terrestre: preservação da biodiversidade e recuperação de ecossistemas.",
+
+  16: "ODS 16 - Paz, Justiça e Instituições Eficazes: promoção de políticas agrícolas justas e transparentes.",
+
+  17: "ODS 17 - Parcerias e Meios de Implementação: fortalecimento da cooperação entre governos, empresas e sociedade civil."
+};
+
+function mostrarODS(numero) {
+  const caixa = document.getElementById("infoODS");
+
+  caixa.innerHTML = `
+    <h3>${numero}ª ODS</h3>
+    <p>${ods[numero]}</p>
+  `;
+}
+
+function mostrarListaODS() {
+  const lista = document.getElementById("listaODS");
+
+  if (lista.style.display === "block") {
+    lista.style.display = "none";
+    return;
+  }
+
+  lista.style.display = "block";
+
+  lista.innerHTML = `
+    <h2>🌍 Lista Completa das 17 ODS</h2>
+    <ul>
+      <li>ODS 1 - Erradicação da Pobreza</li>
+      <li>ODS 2 - Fome Zero</li>
+      <li>ODS 3 - Saúde e Bem-Estar</li>
+      <li>ODS 4 - Educação de Qualidade</li>
+      <li>ODS 5 - Igualdade de Gênero</li>
+      <li>ODS 6 - Água Potável e Saneamento</li>
+      <li>ODS 7 - Energia Limpa</li>
+      <li>ODS 8 - Trabalho Decente e Crescimento Econômico</li>
+      <li>ODS 9 - Indústria, Inovação e Infraestrutura</li>
