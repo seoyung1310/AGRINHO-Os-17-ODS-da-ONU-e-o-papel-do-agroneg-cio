@@ -3,70 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ODS e Agronegócio</title>
+  <title>Agricultura Sustentável</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="hero">
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-      <h1>🌱 Os 17 ODS da ONU e o Agronegócio</h1>
-      <p>
-        Sustentabilidade, inovação e desenvolvimento para um futuro melhor.
-      </p>
-    </div>
+  <header>
+    <h1>🌱 Agricultura Sustentável</h1>
+    <p>Construindo um futuro mais verde e equilibrado.</p>
   </header>
 
-  <main>
+  <section class="hero">
+    <div class="card">
+      <h2>O que é Agricultura Sustentável?</h2>
+      <p>
+        A agricultura sustentável busca produzir alimentos de forma responsável,
+        preservando o meio ambiente, economizando recursos naturais e garantindo
+        qualidade de vida para as futuras gerações.
+      </p>
+    </div>
 
-    <section class="introducao container">
-      <div class="intro-img">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200" alt="Agronegócio sustentável">
+    <div class="card interactive">
+      <h2>🌍 Curiosidade</h2>
+      <p id="curiosityText">
+        Clique no botão para descobrir uma curiosidade sustentável.
+      </p>
+      <button id="curiosityBtn">Mostrar Curiosidade</button>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefícios da Agricultura Sustentável</h2>
+
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <h3>💧 Economia de Água</h3>
+        <p>Utiliza técnicas que evitam desperdícios e preservam rios e lagos.</p>
       </div>
 
-      <div class="intro-texto card">
-        <h2>📖 Introdução</h2>
-
-        <p>
-          O agronegócio possui um papel essencial na realização dos Objetivos de Desenvolvimento Sustentável da ONU.
-          Além de produzir alimentos, o setor contribui para a preservação ambiental, geração de empregos,
-          inovação tecnológica e desenvolvimento econômico sustentável.
-        </p>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="titulo-section">
-        <h2>📋 Lista das 17 ODS</h2>
+      <div class="benefit-card">
+        <h3>🌿 Preservação do Solo</h3>
+        <p>Evita erosão e mantém a fertilidade da terra por mais tempo.</p>
       </div>
 
-      <div class="center">
-        <button class="btn-lista" onclick="mostrarListaODS()">
-          Mostrar / Ocultar ODS
-        </button>
+      <div class="benefit-card">
+        <h3>🐝 Proteção da Biodiversidade</h3>
+        <p>Ajuda a proteger animais, plantas e polinizadores importantes.</p>
       </div>
+    </div>
+  </section>
 
-      <div id="listaODS" class="lista-ods"></div>
-    </section>
+  <section class="ods-section">
+    <h2>ODS e Agricultura Sustentável</h2>
+    <p>
+      Clique no botão abaixo para descobrir como os 17 Objetivos de Desenvolvimento Sustentável contribuem para um planeta melhor.
+    </p>
 
-    <section class="container">
-      <div class="titulo-section">
-        <h2>🌍 O Papel do Agronegócio em Cada ODS</h2>
-      </div>
+    <button id="showODSBtn">Mostrar as 17 ODS</button>
 
-      <div class="grid-botoes">
-        <button onclick="mostrarODS(1)">ODS 1</button>
-        <button onclick="mostrarODS(2)">ODS 2</button>
-        <button onclick="mostrarODS(3)">ODS 3</button>
-        <button onclick="mostrarODS(4)">ODS 4</button>
-        <button onclick="mostrarODS(5)">ODS 5</button>
-        <button onclick="mostrarODS(6)">ODS 6</button>
-        <button onclick="mostrarODS(7)">ODS 7</button>
-        <button onclick="mostrarODS(8)">ODS 8</button>
-        <button onclick="mostrarODS(9)">ODS 9</button>
+    <div id="odsContainer" class="ods-container"></div>
+  </section>
+
+  <footer>
+    <p>🌎 Site educativo sobre sustentabilidade e agricultura sustentável.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
